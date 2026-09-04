@@ -1,0 +1,79 @@
+name: Build Olis iOS Simulator
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: macos-15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: |
+          sudo xcode-select -s /Applications/Xcode_16.4.app/Contents/Developer
+          xcodebuild -version
+
+      - name: Build Olis
+        run: |
+          xcodebuild \
+            -project OlisIOS.xcodeproj \
+            -scheme OlisIOS \
+            -configuration Release \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            clean build
+
+      - name: Verify app and widget
+        run: |
+          APP_PATH="$(find build/Build/Products -type d -name 'OlisIOS.app' | head -n 1)"
+          WIDGET_PATH="$(find build/Build/Products -type d -name 'OlisWidget.appex' | head -n 1)"
+
+          echo "APP_PATH=$APP_PATH"
+          echo "WIDGET_PATH=$WIDGET_PATH"
+
+          if [ -z "$APP_PATH" ]; then
+            echo "ERROR: OlisIOS.app not found"
+            exit 1
+          fi
+
+          if [ -z "$WIDGET_PATH" ]; then
+            echo "ERROR: OlisWidget.appex not found"
+            exit 1
+          fi
+
+          echo "=== APP CONTENTS ==="
+          find "$APP_PATH" -maxdepth 2 -type f | sort
+
+          echo "=== WIDGET CONTENTS ==="
+          find "$WIDGET_PATH" -maxdepth 2 -type f | sort
+
+          echo "=== WIDGET INFO.PLIST ==="
+          plutil -p "$WIDGET_PATH/Info.plist"
+
+      - name: Pack for Appetize
+        run: |
+          APP_PATH="$(find build/Build/Products -type d -name 'OlisIOS.app' | head -n 1)"
+
+          ditto \
+            -c \
+            -k \
+            --sequesterRsrc \
+            --keepParent \
+            "$APP_PATH" \
+            OlisIOS-Appetize.zip
+
+      - name: Upload Appetize build
+        uses: actions/upload-artifact@v4
+        with:
+          name: OlisIOS-Appetize
+          path: OlisIOS-Appetize.zip
+          if-no-files-found: error
