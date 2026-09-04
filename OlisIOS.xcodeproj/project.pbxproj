@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 56;
+    objects = {
+
+/* Begin PBXBuildFile section */
+        A10000000000000000000001 /* OlisIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* OlisIOSApp.swift */; };
+        A10000000000000000000002 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000002 /* SettingsView.swift */; };
+        A10000000000000000000003 /* Shared App in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* OlisState.swift */; };
+        A10000000000000000000004 /* OlisReaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000004 /* OlisReaction.swift */; };
+        A10000000000000000000005 /* OlisFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000005 /* OlisFood.swift */; };
+        A10000000000000000000006 /* OlisRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000006 /* OlisRules.swift */; };
+        A10000000000000000000007 /* OlisPhrases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000007 /* OlisPhrases.swift */; };
+        A10000000000000000000008 /* OlisStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000008 /* OlisStore.swift */; };
+
+        A20000000000000000000001 /* OlisWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000001 /* OlisWidgetBundle.swift */; };
+        A20000000000000000000002 /* OlisWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000002 /* OlisWidget.swift */; };
+        A20000000000000000000003 /* OlisWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000003 /* OlisWidgetView.swift */; };
+        A20000000000000000000004 /* OlisIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000004 /* OlisIntents.swift */; };
+        A20000000000000000000005 /* Widget OlisState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000005 /* OlisState.swift */; };
+        A20000000000000000000006 /* Widget OlisReaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000006 /* OlisReaction.swift */; };
+        A20000000000000000000007 /* Widget OlisFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000007 /* OlisFood.swift */; };
+        A20000000000000000000008 /* Widget OlisRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000008 /* OlisRules.swift */; };
+        A20000000000000000000009 /* Widget OlisPhrases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000009 /* OlisPhrases.swift */; };
+        A2000000000000000000000A /* Widget OlisStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000000000000000000000A /* OlisStore.swift */; };
+        A30000000000000000000001 /* OlisWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C20000000000000000000001 /* OlisWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+        A60000000000000000000001 /* food_cherry.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000001 /* food_cherry.png */; };
+        A60000000000000000000002 /* food_chicken.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000002 /* food_chicken.png */; };
+        A60000000000000000000003 /* food_fish.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000003 /* food_fish.png */; };
+        A60000000000000000000004 /* olis_curious_00.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000004 /* olis_curious_00.png */; };
+        A60000000000000000000005 /* olis_curious_01.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000005 /* olis_curious_01.png */; };
+        A60000000000000000000006 /* olis_curious_02.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000006 /* olis_curious_02.png */; };
+        A60000000000000000000007 /* olis_curious_03.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000007 /* olis_curious_03.png */; };
+        A60000000000000000000008 /* olis_curious_04.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000008 /* olis_curious_04.png */; };
+        A60000000000000000000009 /* olis_curious_05.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000009 /* olis_curious_05.png */; };
+        A60000000000000000000010 /* olis_curious_06.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000010 /* olis_curious_06.png */; };
+        A60000000000000000000011 /* olis_curious_07.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000011 /* olis_curious_07.png */; };
+        A60000000000000000000012 /* olis_eat_00.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000012 /* olis_eat_00.png */; };
+        A60000000000000000000013 /* olis_eat_01.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000013 /* olis_eat_01.png */; };
+        A60000000000000000000014 /* olis_eat_02.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000014 /* olis_eat_02.png */; };
+        A60000000000000000000015 /* olis_eat_03.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000015 /* olis_eat_03.png */; };
+        A60000000000000000000016 /* olis_eat_04.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000016 /* olis_eat_04.png */; };
+        A60000000000000000000017 /* olis_eat_05.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000017 /* olis_eat_05.png */; };
+        A60000000000000000000018 /* olis_eat_06.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000018 /* olis_eat_06.png */; };
+        A60000000000000000000019 /* olis_eat_07.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000019 /* olis_eat_07.png */; };
+        A60000000000000000000020 /* olis_happy_00.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000020 /* olis_happy_00.png */; };
+        A60000000000000000000021 /* olis_happy_01.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000021 /* olis_happy_01.png */; };
+        A60000000000000000000022 /* olis_happy_02.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000022 /* olis_happy_02.png */; };
+        A60000000000000000000023 /* olis_happy_03.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000023 /* olis_happy_03.png */; };
+        A60000000000000000000024 /* olis_happy_04.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000024 /* olis_happy_04.png */; };
+        A60000000000000000000025 /* olis_happy_05.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000025 /* olis_happy_05.png */; };
+        A60000000000000000000026 /* olis_happy_06.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000026 /* olis_happy_06.png */; };
+        A60000000000000000000027 /* olis_happy_07.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000027 /* olis_happy_07.png */; };
+        A60000000000000000000028 /* olis_idle_00.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000028 /* olis_idle_00.png */; };
+        A60000000000000000000029 /* olis_idle_01.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000029 /* olis_idle_01.png */; };
+        A60000000000000000000030 /* olis_idle_02.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000030 /* olis_idle_02.png */; };
+        A60000000000000000000031 /* olis_idle_03.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000031 /* olis_idle_03.png */; };
+        A60000000000000000000032 /* olis_idle_04.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000032 /* olis_idle_04.png */; };
+        A60000000000000000000033 /* olis_idle_05.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000033 /* olis_idle_05.png */; };
+        A60000000000000000000034 /* olis_idle_06.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000034 /* olis_idle_06.png */; };
+        A60000000000000000000035 /* olis_idle_07.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000035 /* olis_idle_07.png */; };
+        A60000000000000000000036 /* olis_sad_00.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000036 /* olis_sad_00.png */; };
+        A60000000000000000000037 /* olis_sad_01.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000037 /* olis_sad_01.png */; };
+        A60000000000000000000038 /* olis_sad_02.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000038 /* olis_sad_02.png */; };
+        A60000000000000000000039 /* olis_sad_03.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000039 /* olis_sad_03.png */; };
+        A60000000000000000000040 /* olis_sad_04.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000040 /* olis_sad_04.png */; };
+        A60000000000000000000041 /* olis_sad_05.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000041 /* olis_sad_05.png */; };
+        A60000000000000000000042 /* olis_sad_06.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000042 /* olis_sad_06.png */; };
+        A60000000000000000000043 /* olis_sad_07.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000043 /* olis_sad_07.png */; };
+        A60000000000000000000044 /* olis_sleep_00.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000044 /* olis_sleep_00.png */; };
+        A60000000000000000000045 /* olis_sleep_01.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000045 /* olis_sleep_01.png */; };
+        A60000000000000000000046 /* olis_sleep_02.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000046 /* olis_sleep_02.png */; };
+        A60000000000000000000047 /* olis_sleep_03.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000047 /* olis_sleep_03.png */; };
+        A60000000000000000000048 /* olis_sleep_04.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000048 /* olis_sleep_04.png */; };
+        A60000000000000000000049 /* olis_sleep_05.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000049 /* olis_sleep_05.png */; };
+        A60000000000000000000050 /* olis_sleep_06.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000050 /* olis_sleep_06.png */; };
+        A60000000000000000000051 /* olis_sleep_07.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000051 /* olis_sleep_07.png */; };
+        A60000000000000000000052 /* olis_smug_00.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000052 /* olis_smug_00.png */; };
+        A60000000000000000000053 /* olis_smug_01.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000053 /* olis_smug_01.png */; };
+        A60000000000000000000054 /* olis_smug_02.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000054 /* olis_smug_02.png */; };
+        A60000000000000000000055 /* olis_smug_03.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000055 /* olis_smug_03.png */; };
+        A60000000000000000000056 /* olis_smug_04.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000056 /* olis_smug_04.png */; };
+        A60000000000000000000057 /* olis_smug_05.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000057 /* olis_smug_05.png */; };
+        A60000000000000000000058 /* olis_smug_06.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000058 /* olis_smug_06.png */; };
+        A60000000000000000000059 /* olis_smug_07.png in Resources */ = {isa = PBXBuildFile; fileRef = B60000000000000000000059 /* olis_smug_07.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+        D10000000000000000000001 = {
+            isa = PBXContainerItemProxy;
+            containerPortal = F000000000000000000000001 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = E200000000000000000000001;
+            remoteInfo = OlisWidget;
+        };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+        D20000000000000000000001 /* Embed App Extensions */ = {
+            isa = PBXCopyFilesBuildPhase;
+            buildActionMask = 2147483647;
+            dstPath = "";
+            dstSubfolderSpec = 13;
+            files = (A30000000000000000000001 /* OlisWidget.appex in Embed App Extensions */,);
+            name = "Embed App Extensions";
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+        B10000000000000000000001 /* OlisIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlisIOSApp.swift; sourceTree = "<group>"; };
+        B10000000000000000000002 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+        B10000000000000000000003 /* OlisState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlisState.swift; sourceTree = "<group>"; };
+        B10000000000000000000004 /* OlisReaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlisReaction.swift; sourceTree = "<group>"; };
+        B10000000000000000000005 /* OlisFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlisFood.swift; sourceTree = "<group>"; };
+        B10000000000000000000006 /* OlisRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlisRules.swift; sourceTree = "<group>"; };
+        B10000000000000000000007 /* OlisPhrases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlisPhrases.swift; sourceTree = "<group>"; };
+        B10000000000000000000008 /* OlisStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlisStore.swift; sourceTree = "<group>"; };
+        B10000000000000000000009 /* App Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        B1000000000000000000000A /* App entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OlisIOS.entitlements; sourceTree = "<group>"; };
+
+        B20000000000000000000001 /* OlisWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlisWidgetBundle.swift; sourceTree = "<group>"; };
+        B20000000000000000000002 /* OlisWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlisWidget.swift; sourceTree = "<group>"; };
+        B20000000000000000000003 /* OlisWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlisWidgetView.swift; sourceTree = "<group>"; };
+        B20000000000000000000004 /* OlisIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlisIntents.swift; sourceTree = "<group>"; };
+        B20000000000000000000005 /* OlisState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlisState.swift; sourceTree = "<group>"; };
+        B20000000000000000000006 /* OlisReaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlisReaction.swift; sourceTree = "<group>"; };
+        B20000000000000000000007 /* OlisFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlisFood.swift; sourceTree = "<group>"; };
+        B20000000000000000000008 /* OlisRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlisRules.swift; sourceTree = "<group>"; };
+        B20000000000000000000009 /* OlisPhrases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlisPhrases.swift; sourceTree = "<group>"; };
+        B2000000000000000000000A /* OlisStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlisStore.swift; sourceTree = "<group>"; };
+        B2000000000000000000000B /* Widget Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        B2000000000000000000000C /* Widget entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OlisWidget.entitlements; sourceTree = "<group>"; };
+
+        C10000000000000000000001 /* OlisIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OlisIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        C20000000000000000000001 /* OlisWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OlisWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+        B60000000000000000000001 /* food_cherry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "food_cherry.png"; sourceTree = "<group>"; };
+        B60000000000000000000002 /* food_chicken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "food_chicken.png"; sourceTree = "<group>"; };
+        B60000000000000000000003 /* food_fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "food_fish.png"; sourceTree = "<group>"; };
+        B60000000000000000000004 /* olis_curious_00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_curious_00.png"; sourceTree = "<group>"; };
+        B60000000000000000000005 /* olis_curious_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_curious_01.png"; sourceTree = "<group>"; };
+        B60000000000000000000006 /* olis_curious_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_curious_02.png"; sourceTree = "<group>"; };
+        B60000000000000000000007 /* olis_curious_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_curious_03.png"; sourceTree = "<group>"; };
+        B60000000000000000000008 /* olis_curious_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_curious_04.png"; sourceTree = "<group>"; };
+        B60000000000000000000009 /* olis_curious_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_curious_05.png"; sourceTree = "<group>"; };
+        B60000000000000000000010 /* olis_curious_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_curious_06.png"; sourceTree = "<group>"; };
+        B60000000000000000000011 /* olis_curious_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_curious_07.png"; sourceTree = "<group>"; };
+        B60000000000000000000012 /* olis_eat_00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_eat_00.png"; sourceTree = "<group>"; };
+        B60000000000000000000013 /* olis_eat_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_eat_01.png"; sourceTree = "<group>"; };
+        B60000000000000000000014 /* olis_eat_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_eat_02.png"; sourceTree = "<group>"; };
+        B60000000000000000000015 /* olis_eat_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_eat_03.png"; sourceTree = "<group>"; };
+        B60000000000000000000016 /* olis_eat_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_eat_04.png"; sourceTree = "<group>"; };
+        B60000000000000000000017 /* olis_eat_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_eat_05.png"; sourceTree = "<group>"; };
+        B60000000000000000000018 /* olis_eat_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_eat_06.png"; sourceTree = "<group>"; };
+        B60000000000000000000019 /* olis_eat_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_eat_07.png"; sourceTree = "<group>"; };
+        B60000000000000000000020 /* olis_happy_00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_happy_00.png"; sourceTree = "<group>"; };
+        B60000000000000000000021 /* olis_happy_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_happy_01.png"; sourceTree = "<group>"; };
+        B60000000000000000000022 /* olis_happy_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_happy_02.png"; sourceTree = "<group>"; };
+        B60000000000000000000023 /* olis_happy_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_happy_03.png"; sourceTree = "<group>"; };
+        B60000000000000000000024 /* olis_happy_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_happy_04.png"; sourceTree = "<group>"; };
+        B60000000000000000000025 /* olis_happy_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_happy_05.png"; sourceTree = "<group>"; };
+        B60000000000000000000026 /* olis_happy_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_happy_06.png"; sourceTree = "<group>"; };
+        B60000000000000000000027 /* olis_happy_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_happy_07.png"; sourceTree = "<group>"; };
+        B60000000000000000000028 /* olis_idle_00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_idle_00.png"; sourceTree = "<group>"; };
+        B60000000000000000000029 /* olis_idle_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_idle_01.png"; sourceTree = "<group>"; };
+        B60000000000000000000030 /* olis_idle_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_idle_02.png"; sourceTree = "<group>"; };
+        B60000000000000000000031 /* olis_idle_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_idle_03.png"; sourceTree = "<group>"; };
+        B60000000000000000000032 /* olis_idle_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_idle_04.png"; sourceTree = "<group>"; };
+        B60000000000000000000033 /* olis_idle_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_idle_05.png"; sourceTree = "<group>"; };
+        B60000000000000000000034 /* olis_idle_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_idle_06.png"; sourceTree = "<group>"; };
+        B60000000000000000000035 /* olis_idle_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_idle_07.png"; sourceTree = "<group>"; };
+        B60000000000000000000036 /* olis_sad_00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_sad_00.png"; sourceTree = "<group>"; };
+        B60000000000000000000037 /* olis_sad_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_sad_01.png"; sourceTree = "<group>"; };
+        B60000000000000000000038 /* olis_sad_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_sad_02.png"; sourceTree = "<group>"; };
+        B60000000000000000000039 /* olis_sad_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_sad_03.png"; sourceTree = "<group>"; };
+        B60000000000000000000040 /* olis_sad_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_sad_04.png"; sourceTree = "<group>"; };
+        B60000000000000000000041 /* olis_sad_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_sad_05.png"; sourceTree = "<group>"; };
+        B60000000000000000000042 /* olis_sad_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_sad_06.png"; sourceTree = "<group>"; };
+        B60000000000000000000043 /* olis_sad_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_sad_07.png"; sourceTree = "<group>"; };
+        B60000000000000000000044 /* olis_sleep_00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_sleep_00.png"; sourceTree = "<group>"; };
+        B60000000000000000000045 /* olis_sleep_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_sleep_01.png"; sourceTree = "<group>"; };
+        B60000000000000000000046 /* olis_sleep_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_sleep_02.png"; sourceTree = "<group>"; };
+        B60000000000000000000047 /* olis_sleep_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_sleep_03.png"; sourceTree = "<group>"; };
+        B60000000000000000000048 /* olis_sleep_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_sleep_04.png"; sourceTree = "<group>"; };
+        B60000000000000000000049 /* olis_sleep_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_sleep_05.png"; sourceTree = "<group>"; };
+        B60000000000000000000050 /* olis_sleep_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_sleep_06.png"; sourceTree = "<group>"; };
+        B60000000000000000000051 /* olis_sleep_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_sleep_07.png"; sourceTree = "<group>"; };
+        B60000000000000000000052 /* olis_smug_00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_smug_00.png"; sourceTree = "<group>"; };
+        B60000000000000000000053 /* olis_smug_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_smug_01.png"; sourceTree = "<group>"; };
+        B60000000000000000000054 /* olis_smug_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_smug_02.png"; sourceTree = "<group>"; };
+        B60000000000000000000055 /* olis_smug_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_smug_03.png"; sourceTree = "<group>"; };
+        B60000000000000000000056 /* olis_smug_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_smug_04.png"; sourceTree = "<group>"; };
+        B60000000000000000000057 /* olis_smug_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_smug_05.png"; sourceTree = "<group>"; };
+        B60000000000000000000058 /* olis_smug_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_smug_06.png"; sourceTree = "<group>"; };
+        B60000000000000000000059 /* olis_smug_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "olis_smug_07.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+        F10000000000000000000001 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+        F20000000000000000000001 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+        G000000000000000000000001 = {
+            isa = PBXGroup;
+            children = (
+                G100000000000000000000001 /* OlisIOS */,
+                G200000000000000000000001 /* OlisWidget */,
+                G300000000000000000000001 /* Products */,
+            );
+            sourceTree = "<group>";
+        };
+        G100000000000000000000001 /* OlisIOS */ = {
+            isa = PBXGroup;
+            path = OlisIOS;
+            sourceTree = "<group>";
+            children = (
+                B10000000000000000000001,
+                G110000000000000000000001 /* Views */,
+                G120000000000000000000001 /* Shared */,
+                B10000000000000000000009,
+                B1000000000000000000000A,
+            );
+        };
+        G110000000000000000000001 /* Views */ = {
+            isa = PBXGroup;
+            path = Views;
+            sourceTree = "<group>";
+            children = (B10000000000000000000002,);
+        };
+        G120000000000000000000001 /* Shared */ = {
+            isa = PBXGroup;
+            path = Shared;
+            sourceTree = "<group>";
+            children = (
+                B10000000000000000000003,
+                B10000000000000000000004,
+                B10000000000000000000005,
+                B10000000000000000000006,
+                B10000000000000000000007,
+                B10000000000000000000008,
+            );
+        };
+        G200000000000000000000001 /* OlisWidget */ = {
+            isa = PBXGroup;
+            path = OlisWidget;
+            sourceTree = "<group>";
+            children = (
+                B20000000000000000000001,
+                B20000000000000000000002,
+                B20000000000000000000003,
+                B20000000000000000000004,
+                G220000000000000000000001 /* Shared */,
+                B2000000000000000000000B,
+                B2000000000000000000000C,
+                G600000000000000000000001 /* Resources */,
+            );
+        };
+        G220000000000000000000001 /* Shared */ = {
+            isa = PBXGroup;
+            path = Shared;
+            sourceTree = "<group>";
+            children = (
+                B20000000000000000000005,
+                B20000000000000000000006,
+                B20000000000000000000007,
+                B20000000000000000000008,
+                B20000000000000000000009,
+                B2000000000000000000000A,
+            );
+        };
+        G300000000000000000000001 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                C10000000000000000000001,
+                C20000000000000000000001,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        G600000000000000000000001 /* Resources */ = {
+            isa = PBXGroup;
+            path = Resources;
+            sourceTree = "<group>";
+            children = (
+                B60000000000000000000001 /* food_cherry.png */,
+                B60000000000000000000002 /* food_chicken.png */,
+                B60000000000000000000003 /* food_fish.png */,
+                B60000000000000000000004 /* olis_curious_00.png */,
+                B60000000000000000000005 /* olis_curious_01.png */,
+                B60000000000000000000006 /* olis_curious_02.png */,
+                B60000000000000000000007 /* olis_curious_03.png */,
+                B60000000000000000000008 /* olis_curious_04.png */,
+                B60000000000000000000009 /* olis_curious_05.png */,
+                B60000000000000000000010 /* olis_curious_06.png */,
+                B60000000000000000000011 /* olis_curious_07.png */,
+                B60000000000000000000012 /* olis_eat_00.png */,
+                B60000000000000000000013 /* olis_eat_01.png */,
+                B60000000000000000000014 /* olis_eat_02.png */,
+                B60000000000000000000015 /* olis_eat_03.png */,
+                B60000000000000000000016 /* olis_eat_04.png */,
+                B60000000000000000000017 /* olis_eat_05.png */,
+                B60000000000000000000018 /* olis_eat_06.png */,
+                B60000000000000000000019 /* olis_eat_07.png */,
+                B60000000000000000000020 /* olis_happy_00.png */,
+                B60000000000000000000021 /* olis_happy_01.png */,
+                B60000000000000000000022 /* olis_happy_02.png */,
+                B60000000000000000000023 /* olis_happy_03.png */,
+                B60000000000000000000024 /* olis_happy_04.png */,
+                B60000000000000000000025 /* olis_happy_05.png */,
+                B60000000000000000000026 /* olis_happy_06.png */,
+                B60000000000000000000027 /* olis_happy_07.png */,
+                B60000000000000000000028 /* olis_idle_00.png */,
+                B60000000000000000000029 /* olis_idle_01.png */,
+                B60000000000000000000030 /* olis_idle_02.png */,
+                B60000000000000000000031 /* olis_idle_03.png */,
+                B60000000000000000000032 /* olis_idle_04.png */,
+                B60000000000000000000033 /* olis_idle_05.png */,
+                B60000000000000000000034 /* olis_idle_06.png */,
+                B60000000000000000000035 /* olis_idle_07.png */,
+                B60000000000000000000036 /* olis_sad_00.png */,
+                B60000000000000000000037 /* olis_sad_01.png */,
+                B60000000000000000000038 /* olis_sad_02.png */,
+                B60000000000000000000039 /* olis_sad_03.png */,
+                B60000000000000000000040 /* olis_sad_04.png */,
+                B60000000000000000000041 /* olis_sad_05.png */,
+                B60000000000000000000042 /* olis_sad_06.png */,
+                B60000000000000000000043 /* olis_sad_07.png */,
+                B60000000000000000000044 /* olis_sleep_00.png */,
+                B60000000000000000000045 /* olis_sleep_01.png */,
+                B60000000000000000000046 /* olis_sleep_02.png */,
+                B60000000000000000000047 /* olis_sleep_03.png */,
+                B60000000000000000000048 /* olis_sleep_04.png */,
+                B60000000000000000000049 /* olis_sleep_05.png */,
+                B60000000000000000000050 /* olis_sleep_06.png */,
+                B60000000000000000000051 /* olis_sleep_07.png */,
+                B60000000000000000000052 /* olis_smug_00.png */,
+                B60000000000000000000053 /* olis_smug_01.png */,
+                B60000000000000000000054 /* olis_smug_02.png */,
+                B60000000000000000000055 /* olis_smug_03.png */,
+                B60000000000000000000056 /* olis_smug_04.png */,
+                B60000000000000000000057 /* olis_smug_05.png */,
+                B60000000000000000000058 /* olis_smug_06.png */,
+                B60000000000000000000059 /* olis_smug_07.png */,
+            );
+        };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+        E100000000000000000000001 /* OlisIOS */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = H100000000000000000000001;
+            buildPhases = (
+                I100000000000000000000001,
+                F10000000000000000000001,
+                R100000000000000000000001,
+                D20000000000000000000001,
+            );
+            buildRules = ();
+            dependencies = (J100000000000000000000001,);
+            name = OlisIOS;
+            productName = OlisIOS;
+            productReference = C10000000000000000000001;
+            productType = "com.apple.product-type.application";
+        };
+        E200000000000000000000001 /* OlisWidget */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = H200000000000000000000001;
+            buildPhases = (
+                I200000000000000000000001,
+                F20000000000000000000001,
+                R200000000000000000000001,
+            );
+            buildRules = ();
+            dependencies = ();
+            name = OlisWidget;
+            productName = OlisWidget;
+            productReference = C20000000000000000000001;
+            productType = "com.apple.product-type.app-extension";
+        };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+        F000000000000000000000001 /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                BuildIndependentTargetsInParallel = 1;
+                LastSwiftUpdateCheck = 1640;
+                LastUpgradeCheck = 1640;
+                TargetAttributes = {
+                    E100000000000000000000001 = {CreatedOnToolsVersion = 16.4; };
+                    E200000000000000000000001 = {CreatedOnToolsVersion = 16.4; };
+                };
+            };
+            buildConfigurationList = H000000000000000000000001;
+            compatibilityVersion = "Xcode 14.0";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (en, Base,);
+            mainGroup = G000000000000000000000001;
+            productRefGroup = G300000000000000000000001;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                E100000000000000000000001,
+                E200000000000000000000001,
+            );
+        };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+        R100000000000000000000001 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+        R200000000000000000000001 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A60000000000000000000001 /* food_cherry.png in Resources */, A60000000000000000000002 /* food_chicken.png in Resources */, A60000000000000000000003 /* food_fish.png in Resources */, A60000000000000000000004 /* olis_curious_00.png in Resources */, A60000000000000000000005 /* olis_curious_01.png in Resources */, A60000000000000000000006 /* olis_curious_02.png in Resources */, A60000000000000000000007 /* olis_curious_03.png in Resources */, A60000000000000000000008 /* olis_curious_04.png in Resources */, A60000000000000000000009 /* olis_curious_05.png in Resources */, A60000000000000000000010 /* olis_curious_06.png in Resources */, A60000000000000000000011 /* olis_curious_07.png in Resources */, A60000000000000000000012 /* olis_eat_00.png in Resources */, A60000000000000000000013 /* olis_eat_01.png in Resources */, A60000000000000000000014 /* olis_eat_02.png in Resources */, A60000000000000000000015 /* olis_eat_03.png in Resources */, A60000000000000000000016 /* olis_eat_04.png in Resources */, A60000000000000000000017 /* olis_eat_05.png in Resources */, A60000000000000000000018 /* olis_eat_06.png in Resources */, A60000000000000000000019 /* olis_eat_07.png in Resources */, A60000000000000000000020 /* olis_happy_00.png in Resources */, A60000000000000000000021 /* olis_happy_01.png in Resources */, A60000000000000000000022 /* olis_happy_02.png in Resources */, A60000000000000000000023 /* olis_happy_03.png in Resources */, A60000000000000000000024 /* olis_happy_04.png in Resources */, A60000000000000000000025 /* olis_happy_05.png in Resources */, A60000000000000000000026 /* olis_happy_06.png in Resources */, A60000000000000000000027 /* olis_happy_07.png in Resources */, A60000000000000000000028 /* olis_idle_00.png in Resources */, A60000000000000000000029 /* olis_idle_01.png in Resources */, A60000000000000000000030 /* olis_idle_02.png in Resources */, A60000000000000000000031 /* olis_idle_03.png in Resources */, A60000000000000000000032 /* olis_idle_04.png in Resources */, A60000000000000000000033 /* olis_idle_05.png in Resources */, A60000000000000000000034 /* olis_idle_06.png in Resources */, A60000000000000000000035 /* olis_idle_07.png in Resources */, A60000000000000000000036 /* olis_sad_00.png in Resources */, A60000000000000000000037 /* olis_sad_01.png in Resources */, A60000000000000000000038 /* olis_sad_02.png in Resources */, A60000000000000000000039 /* olis_sad_03.png in Resources */, A60000000000000000000040 /* olis_sad_04.png in Resources */, A60000000000000000000041 /* olis_sad_05.png in Resources */, A60000000000000000000042 /* olis_sad_06.png in Resources */, A60000000000000000000043 /* olis_sad_07.png in Resources */, A60000000000000000000044 /* olis_sleep_00.png in Resources */, A60000000000000000000045 /* olis_sleep_01.png in Resources */, A60000000000000000000046 /* olis_sleep_02.png in Resources */, A60000000000000000000047 /* olis_sleep_03.png in Resources */, A60000000000000000000048 /* olis_sleep_04.png in Resources */, A60000000000000000000049 /* olis_sleep_05.png in Resources */, A60000000000000000000050 /* olis_sleep_06.png in Resources */, A60000000000000000000051 /* olis_sleep_07.png in Resources */, A60000000000000000000052 /* olis_smug_00.png in Resources */, A60000000000000000000053 /* olis_smug_01.png in Resources */, A60000000000000000000054 /* olis_smug_02.png in Resources */, A60000000000000000000055 /* olis_smug_03.png in Resources */, A60000000000000000000056 /* olis_smug_04.png in Resources */, A60000000000000000000057 /* olis_smug_05.png in Resources */, A60000000000000000000058 /* olis_smug_06.png in Resources */, A60000000000000000000059 /* olis_smug_07.png in Resources */,); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+        I100000000000000000000001 = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                A10000000000000000000001,
+                A10000000000000000000002,
+                A10000000000000000000003,
+                A10000000000000000000004,
+                A10000000000000000000005,
+                A10000000000000000000006,
+                A10000000000000000000007,
+                A10000000000000000000008,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        I200000000000000000000001 = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                A20000000000000000000001,
+                A20000000000000000000002,
+                A20000000000000000000003,
+                A20000000000000000000004,
+                A20000000000000000000005,
+                A20000000000000000000006,
+                A20000000000000000000007,
+                A20000000000000000000008,
+                A20000000000000000000009,
+                A2000000000000000000000A,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+        J100000000000000000000001 = {
+            isa = PBXTargetDependency;
+            target = E200000000000000000000001;
+            targetProxy = D10000000000000000000001;
+        };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+        K000000000000000000000001 = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; }; name = Debug; };
+        K000000000000000000000002 = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; }; name = Release; };
+
+        K100000000000000000000001 = {isa = XCBuildConfiguration; buildSettings = {
+            CODE_SIGN_ENTITLEMENTS = OlisIOS/OlisIOS.entitlements;
+            CODE_SIGN_STYLE = Automatic;
+            CURRENT_PROJECT_VERSION = 2;
+            GENERATE_INFOPLIST_FILE = NO;
+            INFOPLIST_FILE = OlisIOS/Info.plist;
+            IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+            MARKETING_VERSION = 0.2;
+            PRODUCT_BUNDLE_IDENTIFIER = com.tawheedxd.olisios;
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SWIFT_EMIT_LOC_STRINGS = YES;
+            SWIFT_VERSION = 5.0;
+            TARGETED_DEVICE_FAMILY = "1,2";
+        }; name = Debug; };
+        K100000000000000000000002 = {isa = XCBuildConfiguration; buildSettings = {
+            CODE_SIGN_ENTITLEMENTS = OlisIOS/OlisIOS.entitlements;
+            CODE_SIGN_STYLE = Automatic;
+            CURRENT_PROJECT_VERSION = 2;
+            GENERATE_INFOPLIST_FILE = NO;
+            INFOPLIST_FILE = OlisIOS/Info.plist;
+            IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+            MARKETING_VERSION = 0.2;
+            PRODUCT_BUNDLE_IDENTIFIER = com.tawheedxd.olisios;
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SWIFT_EMIT_LOC_STRINGS = YES;
+            SWIFT_VERSION = 5.0;
+            TARGETED_DEVICE_FAMILY = "1,2";
+        }; name = Release; };
+
+        K200000000000000000000001 = {isa = XCBuildConfiguration; buildSettings = {
+            APPLICATION_EXTENSION_API_ONLY = YES;
+            CODE_SIGN_ENTITLEMENTS = OlisWidget/OlisWidget.entitlements;
+            CODE_SIGN_STYLE = Automatic;
+            CURRENT_PROJECT_VERSION = 2;
+            GENERATE_INFOPLIST_FILE = NO;
+            INFOPLIST_FILE = OlisWidget/Info.plist;
+            IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+            MARKETING_VERSION = 0.2;
+            PRODUCT_BUNDLE_IDENTIFIER = com.tawheedxd.olisios.widget;
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SKIP_INSTALL = YES;
+            SWIFT_EMIT_LOC_STRINGS = YES;
+            SWIFT_VERSION = 5.0;
+            TARGETED_DEVICE_FAMILY = "1,2";
+        }; name = Debug; };
+        K200000000000000000000002 = {isa = XCBuildConfiguration; buildSettings = {
+            APPLICATION_EXTENSION_API_ONLY = YES;
+            CODE_SIGN_ENTITLEMENTS = OlisWidget/OlisWidget.entitlements;
+            CODE_SIGN_STYLE = Automatic;
+            CURRENT_PROJECT_VERSION = 2;
+            GENERATE_INFOPLIST_FILE = NO;
+            INFOPLIST_FILE = OlisWidget/Info.plist;
+            IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+            MARKETING_VERSION = 0.2;
+            PRODUCT_BUNDLE_IDENTIFIER = com.tawheedxd.olisios.widget;
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SKIP_INSTALL = YES;
+            SWIFT_EMIT_LOC_STRINGS = YES;
+            SWIFT_VERSION = 5.0;
+            TARGETED_DEVICE_FAMILY = "1,2";
+        }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+        H000000000000000000000001 = {isa = XCConfigurationList; buildConfigurations = (K000000000000000000000001, K000000000000000000000002,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+        H100000000000000000000001 = {isa = XCConfigurationList; buildConfigurations = (K100000000000000000000001, K100000000000000000000002,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+        H200000000000000000000001 = {isa = XCConfigurationList; buildConfigurations = (K200000000000000000000001, K200000000000000000000002,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+    };
+    rootObject = F000000000000000000000001 /* Project object */;
+}
